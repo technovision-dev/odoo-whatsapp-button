@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     "name": "Simple WhatsApp Button",
-    "version": "18.0.1.0.0",
+    "version": "18.0.1.0.1",
     "category": "Productivity",
     "summary": "A WhatsApp button on the contact form that opens the chat with "
                "the number already correct. Free, no account, no API.",
@@ -47,6 +47,7 @@ version of it.
     # nobody can read, fork or trust.
     "license": "LGPL-3",
     "images": ["static/description/banner.png"],
+    "icon": "static/description/icon.png",
     "depends": ["base"],
     "data": [
         "views/res_partner_views.xml",

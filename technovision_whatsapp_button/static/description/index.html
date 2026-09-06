@@ -1,0 +1,180 @@
+<!-- Copyright 2026 TechnoVision - License LGPL-3 -->
+<!--
+    Odoo Apps Store description page.
+    Self-contained: inline CSS only, no scripts, no external requests, no fonts.
+-->
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h2 class="oe_slogan" style="color:#2a1f33;">Simple WhatsApp Button</h2>
+            <h3 class="oe_slogan" style="color:#665a70;font-weight:300;">
+                Opens the chat with the number already correct. Free, no account, no API.
+            </h3>
+        </div>
+        <div class="oe_span12 text-center">
+            <img src="banner.png" class="img-fluid"
+                 style="max-width:100%;border-radius:8px;"
+                 alt="Simple WhatsApp Button"/>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h3 class="oe_slogan" style="color:#2a1f33;">The number is the whole problem</h3>
+            <p class="oe_mt32" style="font-size:16px;line-height:1.7;color:#453a50;">
+                WhatsApp needs a number in international form &mdash; a country code,
+                then the national number, with no spaces, brackets, dashes or leading
+                zero. Almost no address book stores it that way, which is why a
+                &ldquo;WhatsApp button&rdquo; so often opens a chat with nobody, or
+                worse, with somebody else.
+            </p>
+            <p style="font-size:16px;line-height:1.7;color:#453a50;">
+                This module reads <b>Mobile</b>, falls back to <b>Phone</b>, strips the
+                formatting, converts a <code>00</code> prefix, and applies the
+                contact&rsquo;s <b>country</b> dialling code when the number is written
+                nationally.
+            </p>
+            <p style="font-size:16px;line-height:1.7;color:#453a50;">
+                And when the result would not be a valid number, <b>the button does not
+                appear at all</b>. A button that does nothing is better than a button
+                that opens the wrong conversation.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h3 class="oe_slogan" style="color:#2a1f33;">What it does with what you have</h3>
+        </div>
+        <div class="oe_span12">
+            <table class="table table-sm" style="font-size:15px;color:#453a50;">
+                <thead>
+                    <tr style="color:#2a1f33;">
+                        <th>On the contact</th>
+                        <th style="text-align:center;">Button</th>
+                        <th>Why</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>+20 123 456 7890</code></td>
+                        <td style="text-align:center;color:#1e9e5a;"><b>shown</b></td>
+                        <td>Already international.</td>
+                    </tr>
+                    <tr>
+                        <td><code>00201234567890</code></td>
+                        <td style="text-align:center;color:#1e9e5a;"><b>shown</b></td>
+                        <td><code>00</code> is the international prefix.</td>
+                    </tr>
+                    <tr>
+                        <td><code>01234567890</code> with a country set</td>
+                        <td style="text-align:center;color:#1e9e5a;"><b>shown</b></td>
+                        <td>The dialling code is applied and the leading zero dropped.</td>
+                    </tr>
+                    <tr>
+                        <td><code>01234567890</code> with no country</td>
+                        <td style="text-align:center;color:#b03a3a;"><b>hidden</b></td>
+                        <td>No way to know which country. Guessing opens a chat with a stranger.</td>
+                    </tr>
+                    <tr>
+                        <td><code>+20 123 456 7890 ext 12</code></td>
+                        <td style="text-align:center;color:#b03a3a;"><b>hidden</b></td>
+                        <td>An extension is not part of the number.</td>
+                    </tr>
+                    <tr>
+                        <td><code>+2012</code> &middot; <code>call the office</code></td>
+                        <td style="text-align:center;color:#b03a3a;"><b>hidden</b></td>
+                        <td>Not a number.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- tv:screenshots -->
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h3 class="oe_slogan" style="color:#2a1f33;">See it working</h3>
+        </div>
+        <div class="oe_span12 text-center oe_mt32">
+            <img src="01_international_number.png" class="img-fluid"
+                 style="max-width:100%;border:1px solid #e4e0e8;border-radius:8px;"
+                 alt="A contact whose mobile is already in international form"/>
+            <p style="color:#665a70;font-size:14px;margin-top:10px;">
+                A number already in international form. The button sits next to it.
+            </p>
+        </div>
+        <div class="oe_span12 text-center oe_mt32">
+            <img src="02_national_number_with_country.png" class="img-fluid"
+                 style="max-width:100%;border:1px solid #e4e0e8;border-radius:8px;"
+                 alt="A national number on a contact with a country set"/>
+            <p style="color:#665a70;font-size:14px;margin-top:10px;">
+                A national number, with the contact&rsquo;s country set. The dialling
+                code is applied for you.
+            </p>
+        </div>
+        <div class="oe_span12 text-center oe_mt32">
+            <img src="03_unusable_number_no_button.png" class="img-fluid"
+                 style="max-width:100%;border:1px solid #e4e0e8;border-radius:8px;"
+                 alt="A contact whose number is not usable, with no button"/>
+            <p style="color:#665a70;font-size:14px;margin-top:10px;">
+                A number that is not usable. No button &mdash; which is the point.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span4">
+            <h4 style="color:#2a1f33;">Nothing leaves your Odoo</h4>
+            <p style="color:#665a70;">
+                The link is built in Python and rendered into the page. Odoo never
+                contacts WhatsApp; your browser goes to <code>wa.me</code> only when
+                somebody clicks. No account, no API key, no telemetry, nothing recorded.
+            </p>
+        </div>
+        <div class="oe_span4">
+            <h4 style="color:#2a1f33;">Nothing to configure</h4>
+            <p style="color:#665a70;">
+                Install it and the button is there. It depends on <code>base</code>
+                alone, adds one non-stored computed field, and uninstalls without
+                leaving anything behind.
+            </p>
+        </div>
+        <div class="oe_span4">
+            <h4 style="color:#2a1f33;">Free, and built like a paid one</h4>
+            <p style="color:#665a70;">
+                18 automated tests, most of them asserting that <i>no</i> link is
+                produced. Nine documents inside the module. LGPL-3, and the source is
+                public on GitHub.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <div class="oe_span12">
+            <h3 class="oe_slogan" style="color:#2a1f33;">If you need to <i>send</i> rather than open a chat</h3>
+            <p class="oe_mt32" style="font-size:16px;line-height:1.7;color:#453a50;">
+                Templates, delivery status, retries and a record of what was sent are
+                <b>TechnoVision WhatsApp Core</b>, a paid module. This one is
+                deliberately <b>not</b> a cut-down version of it &mdash; it is a
+                different thing that happens to share a name.
+            </p>
+            <p style="font-size:16px;line-height:1.7;color:#453a50;">
+                Both, and the rest of our Odoo apps, are at
+                <a href="https://technovision.dev/products">technovision.dev/products</a>.
+                Support: <a href="mailto:info@technovision.dev">info@technovision.dev</a>.
+            </p>
+        </div>
+    </div>
+</section>

@@ -3,6 +3,18 @@
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and
 the version numbering is Odoo's own.
 
+## [18.0.1.0.1] - 2026-09-06
+
+### Changed
+
+* **The Odoo Apps Store listing now has a face.** Banner, icon and a
+  description page in the same house style as the paid modules, with three
+  screenshots — a number already international, a national number with the
+  country set, and one that is not usable, where the button correctly is not
+  there. A listing with no image beside nine that have one reads as abandoned.
+
+---
+
 ## [18.0.1.0.0] - 2026-09-06
 
 First release.
