@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     "name": "Free WhatsApp Button for Contacts",
-    "version": "18.0.1.0.1",
+    "version": "18.0.1.0.2",
     "category": "Productivity",
     "summary": "Free WhatsApp button for Odoo contacts: open a WhatsApp chat "
                "from any contact or customer with the number already formatted. "
@@ -49,9 +49,13 @@ version of it.
     "license": "LGPL-3",
     "images": ["static/description/banner.png"],
     "icon": "static/description/icon.png",
-    "depends": ["base"],
+    # base_setup provides res_config_settings_view_form, which the About
+    # panel extends. It is part of every standard Odoo installation, and the
+    # panel is the only thing that needs it.
+    "depends": ["base", "base_setup"],
     "data": [
         "views/res_partner_views.xml",
+        "views/res_config_settings_views.xml",
     ],
     "installable": True,
     "application": False,

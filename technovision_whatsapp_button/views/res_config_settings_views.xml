@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2026 TechnoVision · License LGPL-3 -->
+<odoo>
+
+    <!--
+      An About block in Settings, and nothing anywhere else.
+
+      Deliberately not on the contact form, not a banner, not a dialog and not
+      a notification. Somebody reaches this only by opening Settings and
+      scrolling to it, which is the difference between information and an
+      advertisement.
+
+      The free button keeps working identically whether or not this is ever
+      read. Nothing here gates a feature or degrades one.
+    -->
+    <record id="res_config_settings_view_form_whatsapp_button" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.whatsapp.button</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base_setup.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form" position="inside">
+                <app string="WhatsApp Button" name="technovision_whatsapp_button"
+                     logo="/technovision_whatsapp_button/static/description/icon.png">
+
+                    <block title="About this module"
+                           name="tv_whatsapp_button_about">
+                        <setting string="Free, and staying free"
+                                 help="The WhatsApp button needs no API key, no Meta account and no subscription. It formats the number and opens a chat. Nothing in this module reports anything anywhere.">
+                            <div class="text-muted">
+                                Published by TechnoVision ·
+                                <a href="mailto:info@technovision.dev">info@technovision.dev</a>
+                            </div>
+                        </setting>
+                    </block>
+
+                    <block title="If you need two-way WhatsApp"
+                           name="tv_whatsapp_button_upgrade">
+                        <setting string="What this module does not do"
+                                 help="This button opens a chat. It cannot receive messages, answer them, send templates outside the 24-hour window, or know what happened to a message after you sent it.">
+                            <div class="content-group">
+                                <table class="table table-sm o_main_table" style="max-width:640px">
+                                    <thead>
+                                        <tr>
+                                            <th/>
+                                            <th>This module</th>
+                                            <th>WhatsApp Sales Automation</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Open a chat from a contact</td>
+                                            <td>Yes</td>
+                                            <td>Yes</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Meta account required</td>
+                                            <td>No</td>
+                                            <td>Yes</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Receive messages</td>
+                                            <td>No</td>
+                                            <td>Yes</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Answer automatically</td>
+                                            <td>No</td>
+                                            <td>Keyword rules</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Order and invoice lookups</td>
+                                            <td>No</td>
+                                            <td>Yes</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Payment links</td>
+                                            <td>No</td>
+                                            <td>Yes</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Message history</td>
+                                            <td>No</td>
+                                            <td>Yes</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Handover to a person</td>
+                                            <td>No</td>
+                                            <td>Yes</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Price</td>
+                                            <td>Free</td>
+                                            <td>Paid</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="mt16">
+                                    <a class="btn btn-secondary" role="button"
+                                       href="https://technovision.dev/products/whatsapp-sales-automation?utm_source=odoo-apps&amp;utm_medium=module&amp;utm_campaign=whatsapp-button"
+                                       target="_blank" rel="noopener noreferrer">
+                                        See the paid module
+                                    </a>
+                                    <a class="btn btn-link" role="button"
+                                       href="https://technovision.dev/docs/whatsapp-sales-automation/overview?utm_source=odoo-apps&amp;utm_medium=module&amp;utm_campaign=whatsapp-button"
+                                       target="_blank" rel="noopener noreferrer">
+                                        Documentation
+                                    </a>
+                                    <a class="btn btn-link" role="button"
+                                       href="https://technovision.dev/offers?utm_source=odoo-apps&amp;utm_medium=module&amp;utm_campaign=whatsapp-button"
+                                       target="_blank" rel="noopener noreferrer">
+                                        Request a demo
+                                    </a>
+                                </div>
+                                <div class="text-muted mt8" style="font-size:12px">
+                                    These are ordinary links. Nothing is sent from
+                                    your database unless you click one.
+                                </div>
+                            </div>
+                        </setting>
+                    </block>
+                </app>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
