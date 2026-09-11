@@ -3,6 +3,34 @@
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and
 the version numbering is Odoo's own.
 
+## [18.0.1.0.2] - 2026-09-11
+
+### Added
+
+* **An About panel under Settings**, and nothing anywhere else. It says what
+  this module does and does not do, and compares it with the paid two-way
+  module for anyone who needs receiving, automatic replies, order lookups or
+  payment links.
+
+  Where it lives is the whole design. It is a section of Settings, reached only
+  by deliberately opening Settings. There is no banner on the contact form, no
+  dialog on install, no notification, and nothing that appears while somebody
+  is doing their job. A free module that advertises at you during work is a
+  free module people uninstall.
+
+  **Nothing is transmitted.** No ping, no version check, no install count, no
+  identifier, no outbound request of any kind. The only attribution is a
+  `utm_source` on the links themselves, which the destination sees if — and
+  only if — a person chooses to click one. That is a link, not telemetry.
+
+  The button itself is unchanged and still free. Nothing here gates a feature
+  or degrades one.
+
+### Changed
+
+* Depends on `base_setup` as well as `base`. It is part of every standard Odoo
+  installation, and the About panel is the only thing that needs it.
+
 ## [18.0.1.0.1] - 2026-09-06
 
 ### Changed
