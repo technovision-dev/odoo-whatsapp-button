@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     "name": "Free WhatsApp Button for Contacts",
-    "version": "18.0.1.0.3",
+    "version": "18.0.1.0.4",
     "category": "Productivity",
     "summary": "Free WhatsApp button for Odoo contacts: open a WhatsApp chat "
                "from any contact or customer with the number already formatted. "
