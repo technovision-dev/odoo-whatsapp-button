@@ -31,11 +31,11 @@ class ResPartner(models.Model):
              "rather than opening the wrong chat.",
     )
 
-    @api.depends("mobile", "phone", "country_id")
+    @api.depends("phone", "country_id")
     def _compute_whatsapp_link(self):
         for partner in self:
             number = self._whatsapp_e164(
-                partner.mobile or partner.phone, partner.country_id
+                partner.phone, partner.country_id
             )
             partner.whatsapp_link = (
                 WA_ME % number.lstrip("+") if self._whatsapp_valid(number) else False

@@ -12,7 +12,7 @@
                 about this number, and putting it beside the field is what makes
                 its absence legible when the number is unusable.
             -->
-            <field name="mobile" position="after">
+            <field name="phone" position="after">
                 <field name="whatsapp_link" invisible="1"/>
                 <button name="action_open_whatsapp" type="object"
                         string="WhatsApp" icon="fa-comments"
