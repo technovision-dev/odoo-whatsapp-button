@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     "name": "Free WhatsApp Button for Contacts",
-    "version": "18.0.1.0.4",
+    "version": "18.0.1.0.5",
     "category": "Productivity",
     "summary": "Free WhatsApp button for Odoo contacts: open a WhatsApp chat "
                "from any contact or customer with the number already formatted. "
@@ -34,10 +34,11 @@ It is free because it is the smallest end of something larger, not because it
 is a demo. It ships the same documentation and the same tests as the paid
 modules in the suite.
 
-If you need to send a message from Odoo rather than open a chat - templates,
-delivery status, retries, a log of what was sent - that is
-TechnoVision WhatsApp Core, and this module is deliberately not a cut-down
-version of it.
+If you want Odoo to send and answer WhatsApp messages rather than open a
+chat by hand - two-way messaging on the official Meta Cloud API, order and
+invoice lookups, payment links and human handover - that is TechnoVision
+WhatsApp Sales and Payment Automation. This module stays free and complete
+on its own; it is not a trial of that one.
     """,
     "author": "TechnoVision",
     "maintainer": "TechnoVision",
