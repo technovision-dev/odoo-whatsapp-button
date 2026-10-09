@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 # Copyright 2026 TechnoVision
-# License LGPL-3 (see LICENSE file for full licensing details).
+# License OPL-1 (see LICENSE file for full licensing details).
 """The number handling, which is the whole module.
 
-A free module is the first thing a prospective buyer installs, so it is the
-first evidence they have about how the paid ones are written. These tests are
+This is often the first module a prospective buyer installs, so it is the
+first evidence they have about how the others are written. These tests are
 here for that reason as much as for the code.
 """
 from odoo.tests import tagged

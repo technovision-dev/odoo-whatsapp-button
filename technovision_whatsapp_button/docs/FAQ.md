@@ -23,10 +23,10 @@ phone, the desktop client where one is installed, and WhatsApp Web otherwise.
 No. The link is built in Python and followed by the browser when somebody
 clicks. Odoo makes no outbound connection.
 
-**Is it really free, or is it a trial?**
-Free, LGPL-3, and the source is readable. It is the smallest end of a larger
-suite; it is not a demo of one.
+**Is it a trial?**
+No. It is $20, one-time, on the Odoo Apps Store, and complete on its own. It is
+the smallest end of a larger suite, not a demo of one.
 
-**Why LGPL-3 when your other modules are OPL-1?**
-Because a free module under a proprietary licence is a free module nobody can
-read, fork or trust.
+**What licence is it under?**
+OPL-1 from 9 October 2026, like the other TechnoVision modules. Versions
+published before that date remain LGPL-3.

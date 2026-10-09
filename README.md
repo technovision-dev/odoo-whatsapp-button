@@ -3,15 +3,15 @@
 A WhatsApp button on the contact form that opens the chat with the number
 already correct.
 
-**Free. No account, no API key, no configuration, and no outbound connection
-from Odoo.**
+**$20 on the Odoo Apps Store. No account, no API key, no configuration, and no
+outbound connection from Odoo.**
 
 | | |
 |---|---|
 | **Technical name** | `technovision_whatsapp_button` |
 | **Odoo** | 18.0, Community or Enterprise |
 | **Depends on** | `base` only |
-| **Licence** | LGPL-3 |
+| **Licence** | OPL-1 (versions before 9 Oct 2026: LGPL-3) |
 | **Tests** | 18, all passing on Odoo 18 |
 | **Maintainer** | [TechnoVision](https://technovision.dev) |
 
@@ -79,24 +79,22 @@ API, no telemetry, and nothing recorded.
 
 In [`technovision_whatsapp_button/docs/`](technovision_whatsapp_button/docs) —
 installation, configuration, user guide, FAQ, troubleshooting, security model,
-test report and changelog. The same set the paid modules ship, because a free
-module is the first evidence anyone has about how the paid ones are written.
+test report and changelog. The same set every TechnoVision module ships.
 
 ## If you need to *send* from Odoo
 
 Templates, delivery status, retries and a log of what was sent are
-**TechnoVision WhatsApp Core**, a paid module. This one is deliberately **not**
+**TechnoVision WhatsApp Core**, a separate module. This one is deliberately **not**
 a cut-down version of it — it is a different thing that happens to share a
 name. See [technovision.dev/products](https://technovision.dev/products).
 
 ## Contributing
 
-Issues and pull requests welcome. A bug here is evidence about the whole
-catalogue, so it is treated the same as one in a paid module.
+Issues welcome: email info@technovision.dev or open one here.
 
 ## Licence
 
-LGPL-3. Full text in [LICENSE](LICENSE); the GPL-3 text it incorporates is in
-[COPYING](COPYING).
+Odoo Proprietary License v1.0 (OPL-1) from 9 October 2026; full text in [LICENSE](LICENSE).
+Versions published before that date remain under LGPL-3.
 
 Copyright 2026 TechnoVision.
