@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright 2026 TechnoVision - License LGPL-3 -->
+<!-- Copyright 2026 TechnoVision - License OPL-1 -->
 <odoo>
 
     <record id="view_partner_form_whatsapp_button" model="ir.ui.view">
