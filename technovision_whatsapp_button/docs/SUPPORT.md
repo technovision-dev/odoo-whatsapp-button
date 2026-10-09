@@ -2,9 +2,8 @@
 
 **info@technovision.dev**
 
-This module is free, and it is supported on a best-effort basis. Bug reports
-are welcome and are treated the same as those for the paid modules - a defect
-here is evidence about all of them.
+Support is included in the price. If the button does not behave as its page
+describes, email us with your Odoo version, edition and hosting.
 
 Include the number as it appears on the contact, the contact's country, and
 what the button did or did not do.

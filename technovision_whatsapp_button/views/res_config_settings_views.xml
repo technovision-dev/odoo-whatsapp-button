@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright 2026 TechnoVision · License LGPL-3 -->
+<!-- Copyright 2026 TechnoVision · License OPL-1 -->
 <odoo>
 
     <!--
@@ -10,7 +10,7 @@
       scrolling to it, which is the difference between information and an
       advertisement.
 
-      The free button keeps working identically whether or not this is ever
+      The button keeps working identically whether or not this is ever
       read. Nothing here gates a feature or degrades one.
     -->
     <record id="res_config_settings_view_form_whatsapp_button" model="ir.ui.view">
@@ -24,7 +24,7 @@
 
                     <block title="About this module"
                            name="tv_whatsapp_button_about">
-                        <setting string="Free, and staying free"
+                        <setting string="No account, no subscription"
                                  help="The WhatsApp button needs no API key, no Meta account and no subscription. It formats the number and opens a chat. Nothing in this module reports anything anywhere.">
                             <div class="text-muted">
                                 Published by TechnoVision ·
@@ -89,8 +89,8 @@
                                         </tr>
                                         <tr>
                                             <td>Price</td>
-                                            <td>Free</td>
-                                            <td>Paid</td>
+                                            <td>$20, one-time</td>
+                                            <td>See its listing</td>
                                         </tr>
                                     </tbody>
                                 </table>

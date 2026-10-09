@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 {
-    "name": "Free WhatsApp Button for Contacts",
-    "version": "19.0.1.0.5",
+    "name": "WhatsApp Button for Contacts",
+    "version": "19.0.1.0.6",
     "category": "Productivity",
-    "summary": "Free WhatsApp button for Odoo contacts: open a WhatsApp chat "
+    "summary": "WhatsApp button for Odoo contacts: open a WhatsApp chat "
                "from any contact or customer with the number already formatted. "
                "No API key, no account.",
     "description": """
@@ -24,30 +24,30 @@ refuses to show the button at all when the result would not be a valid
 number - because a button that opens a chat with the wrong person is worse
 than no button.
 
-Free, and built like a paid one
--------------------------------
+Built properly
+--------------
 
 No account, no API key, no outbound connection, nothing recorded. The number
 is turned into a link in the browser; Odoo never contacts WhatsApp.
 
-It is free because it is the smallest end of something larger, not because it
-is a demo. It ships the same documentation and the same tests as the paid
-modules in the suite.
+It is the smallest end of something larger, not a demo. It ships the same
+documentation and the same tests as the other modules in the suite.
 
 If you want Odoo to send and answer WhatsApp messages rather than open a
 chat by hand - two-way messaging on the official Meta Cloud API, order and
 invoice lookups, payment links and human handover - that is TechnoVision
-WhatsApp Sales and Payment Automation. This module stays free and complete
+WhatsApp Sales and Payment Automation. This module is complete
 on its own; it is not a trial of that one.
     """,
     "author": "TechnoVision",
     "maintainer": "TechnoVision",
     "website": "https://technovision.dev",
     "support": "info@technovision.dev",
-    # LGPL-3 rather than OPL-1: this is the free tier, it is published on
-    # GitHub, and a free module under a proprietary licence is a free module
-    # nobody can read, fork or trust.
-    "license": "LGPL-3",
+    # OPL-1 from 9 Oct 2026, when the module became paid. Versions published
+    # before that stay LGPL-3 for whoever already has them.
+    "price": 20.00,
+    "currency": "USD",
+    "license": "OPL-1",
     "images": ["static/description/banner.png"],
     "icon": "static/description/icon.png",
     # base_setup provides res_config_settings_view_form, which the About

@@ -3,6 +3,12 @@
 The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and
 the version numbering is Odoo's own.
 
+## [9 October 2026]
+
+### Changed
+- The module is now paid ($20, one-time) and licensed OPL-1. Versions published
+  before this one remain LGPL-3. Renamed "WhatsApp Button for Contacts".
+
 ## [18.0.1.0.2] - 2026-09-11
 
 ### Added

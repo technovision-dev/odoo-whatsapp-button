@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # Copyright 2026 TechnoVision
-# License LGPL-3 (see LICENSE file for full licensing details).
+# License OPL-1 (see LICENSE file for full licensing details).
 """A wa.me link for a contact.
 
 Everything here is one small problem done properly: turning what is in an
